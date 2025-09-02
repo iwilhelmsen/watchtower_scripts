@@ -162,11 +162,6 @@ craftingTable.addShaped("ctgui/new/crafting/limestone_0", <item:create:limestone
     [<item:minecraft:cobblestone>, <item:minecraft:water_bucket>, <item:minecraft:cobblestone>],
     [IIngredientEmpty.getInstance(), <item:cobblemon:white_apricorn>, IIngredientEmpty.getInstance()]]);
 
-craftingTable.addShaped("ctgui/new/crafting/ancient_origin_ball_0", <item:cobblemon:ancient_origin_ball>, [
-    [IIngredientEmpty.getInstance(), <item:create:polished_rose_quartz>, IIngredientEmpty.getInstance()],
-    [<item:oritech:energite_ingot>, <item:oritech:overcharged_crystal>, <item:oritech:energite_ingot>],
-    [IIngredientEmpty.getInstance(), <item:create:polished_rose_quartz>, IIngredientEmpty.getInstance()]]);
-
 craftingTable.addShaped("ctgui/new/crafting/health_feather_0", <item:cobblemon:health_feather> * 10, [
     [<item:minecraft:feather>, <item:minecraft:feather>, <item:minecraft:feather>],
     [<item:minecraft:feather>, <item:cobblemon:hp_up>, <item:minecraft:feather>],
@@ -597,12 +592,6 @@ craftingTable.addShaped("ctgui/new/crafting/cherish_ball_0", <item:cobblemon:che
     [IIngredientEmpty.getInstance(), <item:cobblemon:red_apricorn>, IIngredientEmpty.getInstance()],
     [<item:cobblemon:red_apricorn>, <item:minecraft:netherite_ingot>, <item:cobblemon:red_apricorn>],
     [IIngredientEmpty.getInstance(), <item:cobblemon:red_apricorn>, IIngredientEmpty.getInstance()]]);
-
-<recipetype:minecraft:crafting>.removeByName("cobblemon:master_ball");
-craftingTable.addShaped("ctgui/new/cobblemon/master_ball_0", <item:cobblemon:master_ball>, [
-    [IIngredientEmpty.getInstance(), <item:advanced_ae:quantum_alloy>, IIngredientEmpty.getInstance()],
-    [<tag:item:c:ingots/netherite>, <item:minecraft:nether_star>, <tag:item:c:ingots/netherite>],
-    [IIngredientEmpty.getInstance(), <item:advanced_ae:quantum_alloy>, IIngredientEmpty.getInstance()]]);
 
 <recipetype:minecraft:crafting>.removeByName("mega_showdown:rotom_fan");
 craftingTable.addShaped("ctgui/new/mega_showdown/rotom_fan_0", <item:mega_showdown:rotom_fan>, [
@@ -1559,4 +1548,45 @@ craftingTable.addShaped("ctgui/new/megacells/crafting/decompression_module_0", <
 craftingTable.addShaped("ctgui/new/megacells/network/cell_dock_0", <item:megacells:cell_dock>, [
     [<item:create:iron_sheet>, <item:create:copper_sheet>, <item:create:iron_sheet>],
     [IIngredientEmpty.getInstance(), <tag:item:ae2:glass_cable>, IIngredientEmpty.getInstance()]]);
+
+craftingTable.addShaped("ctgui/new/crafting/gysahl_green_seeds_0", <item:chococraft:gysahl_green_seeds> * 8, [
+    [<item:minecraft:wheat_seeds>, <item:minecraft:wheat_seeds>, <item:minecraft:wheat_seeds>],
+    [<item:minecraft:wheat_seeds>, <item:twilightforest:transformation_powder>, <item:minecraft:wheat_seeds>],
+    [<item:minecraft:wheat_seeds>, <item:minecraft:wheat_seeds>, <item:minecraft:wheat_seeds>]]);
+
+<recipetype:minecraft:crafting>.removeByName("productivelib:upgrades/child");
+
+craftingTable.addShapeless("ctgui/new/crafting/leftovers_0", <item:cobblemon:leftovers>, [<item:minecraft:apple>, <item:minecraft:shears>]);
+
+craftingTable.addShaped("ctgui/new/crafting/throat_spray_0", <item:cobblemon:throat_spray>, [
+    [IIngredientEmpty.getInstance(), <item:cobblemon:cheri_berry>, IIngredientEmpty.getInstance()],
+    [<item:cobblemon:nomel_berry>, <item:cobblemon:medicinal_brew>, <item:cobblemon:pinap_berry>],
+    [IIngredientEmpty.getInstance(), <item:minecraft:honey_bottle>, IIngredientEmpty.getInstance()]]);
+
+<recipetype:minecraft:crafting>.removeByName("sophisticatedstorage:stack_upgrade_omega_tier");
+craftingTable.addShaped("ctgui/new/sophisticatedstorage/stack_upgrade_omega_tier_0", <item:sophisticatedstorage:stack_upgrade_omega_tier>, [
+    [<item:sophisticatedstorage:stack_upgrade_tier_5>, <item:sophisticatedstorage:stack_upgrade_tier_5>, <item:sophisticatedstorage:stack_upgrade_tier_5>],
+    [<item:sophisticatedstorage:stack_upgrade_tier_5>, <item:minecraft:nether_star>, <item:sophisticatedstorage:stack_upgrade_tier_5>],
+    [<item:sophisticatedstorage:stack_upgrade_tier_5>, <item:sophisticatedstorage:stack_upgrade_tier_5>, <item:sophisticatedstorage:stack_upgrade_tier_5>]]);
+
+<recipetype:minecraft:crafting>.removeByName("sophisticatedbackpacks:stack_upgrade_omega_tier");
+craftingTable.addShaped("ctgui/new/sophisticatedbackpacks/stack_upgrade_omega_tier_0", <item:sophisticatedbackpacks:stack_upgrade_omega_tier>, [
+    [<item:sophisticatedbackpacks:stack_upgrade_tier_4>, <item:sophisticatedbackpacks:stack_upgrade_tier_4>, <item:sophisticatedbackpacks:stack_upgrade_tier_4>],
+    [<item:sophisticatedbackpacks:stack_upgrade_tier_4>, <item:minecraft:nether_star>, <item:sophisticatedbackpacks:stack_upgrade_tier_4>],
+    [<item:sophisticatedbackpacks:stack_upgrade_tier_4>, <item:sophisticatedbackpacks:stack_upgrade_tier_4>, <item:sophisticatedbackpacks:stack_upgrade_tier_4>]]);
+
+craftingTable.addShapeless("ctgui/new/crafting/master_ball_0", <item:cobblemon:master_ball>, [<item:twilightforest:transformation_powder>, <item:cobblemon:ancient_origin_ball>]);
+
+craftingTable.addShapeless("ctgui/new/crafting/ancient_origin_ball_1", <item:cobblemon:ancient_origin_ball>, [<item:twilightforest:transformation_powder>, <item:cobblemon:master_ball>]);
+
+<recipetype:minecraft:crafting>.removeByName("cobblemon:master_ball");
+craftingTable.addShaped("ctgui/new/cobblemon/master_ball_0", <item:cobblemon:master_ball>, [
+    [<item:aether:enchanted_gravitite>, <item:silentgear:tyrian_steel_ingot>, <item:aether:enchanted_gravitite>],
+    [<item:oritech:duratium_ingot>, <item:minecraft:nether_star>, <item:oritech:duratium_ingot>],
+    [<tag:item:c:ingots/netherite>, <item:silentgear:tyrian_steel_ingot>, <tag:item:c:ingots/netherite>]]);
+
+craftingTable.addShaped("ctgui/new/crafting/ancient_origin_ball_0", <item:cobblemon:ancient_origin_ball>, [
+    [<item:twilightforest:carminite_block>, <item:silentgear:crimson_steel_ingot>, <item:twilightforest:carminite_block>],
+    [<item:oritech:duratium_ingot>, <item:minecraft:nether_star>, <item:oritech:duratium_ingot>],
+    [<item:minecraft:netherite_ingot>, <item:silentgear:crimson_steel_ingot>, <item:minecraft:netherite_ingot>]]);
 
